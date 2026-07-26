@@ -1,10 +1,7 @@
 import React from 'react';
-import { Phone, MessageCircle, ShieldCheck, Wrench, Package, CheckCircle2, Sparkles, Truck, Star } from 'lucide-react';
+import { ShieldCheck, Wrench, Package, CheckCircle2, Truck, Star } from 'lucide-react';
 
 export default function Hero() {
-  const phoneNumber = "0570575469";
-  const whatsappNumber = "966570575469";
-  const whatsappMessage = encodeURIComponent("السلام عليكم، أود طلب تسعيرة لتوريد وتفصيل رفوف صينية جديدة بجدة ومكة.");
 
   return (
     <section id="hero" className="relative pt-8 sm:pt-14 pb-20 overflow-hidden bg-grid-pattern ambient-light-top">
@@ -74,26 +71,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Hero Dual CTA Actions (Hidden on Phones to keep mobile view sleek) */}
-            <div className="hidden sm:flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-3">
-              <a
-                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 hover:from-emerald-500 hover:to-emerald-400 text-white font-black text-sm shadow-xl btn-glow-emerald transition-all hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>طلب تسعيرة فورية عبر الواتساب</span>
-              </a>
 
-              <a
-                href={`tel:${phoneNumber}`}
-                className="flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700/80 hover:border-amber-500/50 text-amber-400 font-extrabold text-sm shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <Phone className="w-4 h-4" />
-                <span>اتصال مباشر: {phoneNumber}</span>
-              </a>
-            </div>
 
             {/* Quick Guarantees Row */}
             <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-semibold text-zinc-400 pt-2 border-t border-zinc-800/80">
