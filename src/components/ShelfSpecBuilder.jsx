@@ -8,7 +8,7 @@ export default function ShelfSpecBuilder() {
   const [shelfType, setShelfType] = useState('مستودعات 300 كجم (2م × 2م عمق 60 سم)');
   const [city, setCity] = useState('جدة');
   const [district, setDistrict] = useState('حي الخمرة');
-  const [quantity, setQuantity] = useState('1 طقم (وحدة)');
+  const [quantity, setQuantity] = useState('طقم واحد');
   const [tiers, setTiers] = useState('4 أرفف (المقاس القياسي)');
   const [needInstallation, setNeedInstallation] = useState('نعم، التوصيل والتركيب بجدة/مكة');
   const [notes, setNotes] = useState('');
@@ -116,7 +116,7 @@ ${notes ? `📝 *ملاحظات إضافية:* ${notes}` : ''}
                 </label>
                 <div className="grid grid-cols-2 gap-2 p-1.5 rounded-2xl bg-zinc-900/80 border border-zinc-800">
                   {[
-                    "1 طقم (وحدة واحدة)",
+                    "طقم واحد",
                     "2 إلى 5 أطقم",
                     "6 إلى 10 أطقم",
                     "تجهيز مشروع / كميات"

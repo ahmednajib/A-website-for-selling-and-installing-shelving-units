@@ -14,8 +14,19 @@ export default function Footer() {
           {/* Col 1 */}
           <div className="space-y-3">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500">
-                <Layers className="w-4 h-4 stroke-[2.2]" />
+              <div className="w-9 h-9 rounded-xl overflow-hidden border border-amber-500/30 shadow-md shadow-amber-500/10">
+                <picture>
+                  <source srcSet="/images/logo-icon.webp" type="image/webp" />
+                  <img 
+                    src="/images/logo-icon.jpg" 
+                    alt="مؤسسة الرفوف المتميزة" 
+                    width="36" 
+                    height="36" 
+                    loading="lazy" 
+                    decoding="async" 
+                    className="w-full h-full object-cover" 
+                  />
+                </picture>
               </div>
               <div>
                 <span className="text-base font-bold text-zinc-100 block">مؤسسة الرفوف المتميزة</span>
